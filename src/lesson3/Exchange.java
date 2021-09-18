@@ -13,7 +13,7 @@ public class Exchange {
         change.addAll(base);
         Random random = new Random();
         int x= random.nextInt(base.size());
-        int y= 6 - x;
+        int y= base.size() - x;
         change.set(x, new String ((base.get(y))));
         change.set(y, new String ((base.get(x))));
 
